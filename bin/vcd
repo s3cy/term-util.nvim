@@ -1,0 +1,4 @@
+#!/bin/bash
+
+dir="$(abspath "${1:-$PWD}")"
+term-util.nvim -c "chdir $dir"

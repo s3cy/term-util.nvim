@@ -1,0 +1,5 @@
+#!/bin/bash
+
+register=${1:-@""}
+inp="$(</dev/stdin)"
+term-util.nvim -c "let @$register=\"$(echo "$inp" | sed -E 's/(["\])/\\\1/g')\""

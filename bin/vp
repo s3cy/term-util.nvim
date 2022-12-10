@@ -1,0 +1,4 @@
+#!/bin/bash
+
+register="${1:-@\"}"
+term-util.nvim -e "@$register"
